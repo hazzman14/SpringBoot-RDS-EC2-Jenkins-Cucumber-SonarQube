@@ -1,22 +1,20 @@
-package com.harry.demo.actor;
+package com.harry.demo.film;
 
+import com.harry.demo.actor.Actor;
+import com.harry.demo.actor.ActorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
-//This is the API Layer
 @RestController
-@RequestMapping(path = "api/actors")
-public class ActorController {
-
+@RequestMapping(path = "api/films")
+public class FilmController {
     @Autowired
-    private ActorRepository actorRepository;
+    private FilmRepository filmRepository;
 
     @GetMapping(path="/all")
-    public Iterable<Actor> getActors() {
-        return actorRepository.findAll();
+    public Iterable<Film> getFilms() {
+        return filmRepository.findAll();
     }
-
 }

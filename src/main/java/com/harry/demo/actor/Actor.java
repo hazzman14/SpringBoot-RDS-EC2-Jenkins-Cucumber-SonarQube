@@ -1,7 +1,7 @@
 package com.harry.demo.actor;
 
 import javax.persistence.*;
-import java.util.List;
+
 
 @Entity
 @Table(name = "actor")
