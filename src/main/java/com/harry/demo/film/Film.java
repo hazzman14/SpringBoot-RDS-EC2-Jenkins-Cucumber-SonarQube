@@ -3,7 +3,7 @@ package com.harry.demo.film;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Film")
+@Table(name="film")
 public class Film {
     @Id
     @GeneratedValue
