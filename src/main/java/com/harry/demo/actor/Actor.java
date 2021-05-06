@@ -7,7 +7,8 @@ import javax.persistence.*;
 @Table(name = "actor")
 public class Actor {
     @Id
-    @GeneratedValue
+    @Column(name="actor_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long actor_id;
 
     @Column(name = "first_name")
