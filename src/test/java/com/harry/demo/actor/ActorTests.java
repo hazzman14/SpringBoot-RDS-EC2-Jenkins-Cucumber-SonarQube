@@ -20,10 +20,22 @@ class ActorTests {
     }
 
     @Test
+    public void testGetFirstName() {
+        Actor actor = new Actor("Harry","Phillips");
+        Assertions.assertTrue(actor.getFirstName() == "Harry");
+    }
+
+    @Test
     public void testSetFirstName() {
         Actor actor = new Actor();
         actor.setFirstName("Harry");
         Assertions.assertTrue(actor.getFirstName() == "Harry");
+    }
+
+    @Test
+    public void testGetLastName() {
+        Actor actor = new Actor("Harry","Phillips");
+        Assertions.assertTrue(actor.getLastName() == "Phillips");
     }
 
     @Test
@@ -34,11 +46,12 @@ class ActorTests {
     }
 
     @Test
-    public void testSetActorId() {
+    public void testGetAndSetActorId() {
         Actor actor = new Actor();
         actor.setActor_id(5L);
-        Assertions.assertTrue(actor.getActor_id() == 6L);
+        Assertions.assertTrue(actor.getActor_id() == 5L);
     }
+
 }
 
 
