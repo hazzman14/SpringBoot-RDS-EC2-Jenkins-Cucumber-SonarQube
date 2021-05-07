@@ -6,7 +6,8 @@ import javax.persistence.*;
 @Table(name="category")
 public class Category {
     @Id
-    @GeneratedValue
+    @Column(name="category_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long category_id;
 
     @Column(name = "name")
@@ -33,5 +34,13 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "category_id=" + category_id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
