@@ -33,7 +33,7 @@ public class CategoryController {
     }
 
     @PostMapping(path="/add")
-    public @ResponseBody void addACategory(@RequestParam String name) throws Exception {
+    public @ResponseBody void addCategory(@RequestParam String name) throws Exception {
         //make the new category
         Category a = new Category(name);
         //if there is already a category with this name
