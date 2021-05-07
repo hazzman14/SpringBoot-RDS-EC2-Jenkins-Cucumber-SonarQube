@@ -2,6 +2,9 @@ package com.harry.demo.actor;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface ActorRepository extends CrudRepository <Actor, Long>{
+import java.util.List;
+import java.util.Optional;
 
+public interface ActorRepository extends CrudRepository <Actor, Long>{
+    Optional<Actor> findActorByFirstNameAndLastName(String firstName, String lastName);
 }
