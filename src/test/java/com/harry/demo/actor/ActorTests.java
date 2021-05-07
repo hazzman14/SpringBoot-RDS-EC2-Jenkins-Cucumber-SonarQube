@@ -32,6 +32,13 @@ class ActorTests {
         actor.setLastName("Phillips");
         Assertions.assertTrue(actor.getLastName() == "Phillips");
     }
+
+    @Test
+    public void testSetActorId() {
+        Actor actor = new Actor();
+        actor.setActor_id(5L);
+        Assertions.assertTrue(actor.getActor_id() == 6L);
+    }
 }
 
 
