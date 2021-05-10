@@ -53,7 +53,7 @@
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.3</version>
 				<configuration>
-					<destFile>${sonar.jacoco.reportPath}</destFile>
+					<output>file</output>
 					<append>true</append>
 				</configuration>
 				<executions>
