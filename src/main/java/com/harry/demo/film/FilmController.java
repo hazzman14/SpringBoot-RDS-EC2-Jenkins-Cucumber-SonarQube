@@ -1,13 +1,9 @@
 package com.harry.demo.film;
 
-import com.harry.demo.actor.Actor;
-import com.harry.demo.actor.ActorRepository;
-import com.harry.demo.category.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
-import java.time.Year;
 import java.util.Optional;
 
 @RestController

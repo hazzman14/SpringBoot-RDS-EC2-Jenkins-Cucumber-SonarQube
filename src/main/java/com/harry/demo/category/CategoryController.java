@@ -1,6 +1,5 @@
 package com.harry.demo.category;
 
-import com.harry.demo.actor.Actor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

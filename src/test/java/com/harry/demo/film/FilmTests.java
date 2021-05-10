@@ -1,6 +1,5 @@
 package com.harry.demo.film;
 
-import com.harry.demo.category.Category;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

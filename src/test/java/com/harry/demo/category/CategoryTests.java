@@ -1,6 +1,5 @@
 package com.harry.demo.category;
 
-import com.harry.demo.actor.Actor;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
